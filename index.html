@@ -27,13 +27,13 @@ select,input,textarea{background:var(--panel);border:1px solid var(--line);borde
 
 .section-head{display:flex;justify-content:space-between;align-items:center;margin:24px 0 13px}.section-head h2{font-size:21px;margin:0}.muted{color:var(--muted);font-size:13px}
 .tabs{display:flex;gap:8px;flex-wrap:wrap}.tab{background:var(--panel);border:1px solid var(--line);color:var(--muted);padding:8px 14px;border-radius:30px;cursor:pointer}.tab.active{background:var(--accent2);color:white;border-color:var(--accent2)}
-.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding-bottom:45px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#76609a}.poster{height:205px;display:flex;align-items:center;justify-content:center;font-size:58px;background:linear-gradient(145deg,#33224c,#151322);position:relative}.poster small{position:absolute;top:10px;right:10px;background:#100d1dcc;padding:4px 9px;border-radius:20px;font-size:11px}.poster .sub{position:absolute;bottom:10px;right:10px;left:10px;text-align:center;background:#6d28d9dd;color:white;padding:4px 7px;border-radius:8px;font-size:11px}.card-body{padding:13px}.card h3{font-size:16px;margin:0 0 4px}.meta{font-size:12px;color:var(--muted)}.card-actions{display:flex;gap:8px;margin-top:12px}.card-actions button{flex:1;padding:8px 6px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);color:white;cursor:pointer;font:inherit;font-size:12px}.card-actions button:hover{border-color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding-bottom:45px}.card{background:var(--panel);border:1px solid var(--line);border-radius:17px;overflow:hidden;transition:.2s}.card:hover{transform:translateY(-4px);border-color:#76609a}.poster{height:240px;display:flex;align-items:center;justify-content:center;font-size:58px;background:linear-gradient(145deg,#33224c,#151322);position:relative;overflow:hidden}.poster img.poster-img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}.poster .fallback-icon{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:58px}.poster small{position:absolute;top:10px;right:10px;z-index:2;background:#100d1dcc;padding:4px 9px;border-radius:20px;font-size:11px}.poster .sub{position:absolute;bottom:10px;right:10px;left:10px;z-index:2;text-align:center;background:#6d28d9dd;color:white;padding:4px 7px;border-radius:8px;font-size:11px}.card-body{padding:13px}.card h3{font-size:16px;margin:0 0 4px}.meta{font-size:12px;color:var(--muted)}.card-actions{display:flex;gap:8px;margin-top:12px}.card-actions button{flex:1;padding:8px 6px;border-radius:9px;border:1px solid var(--line);background:var(--panel2);color:white;cursor:pointer;font:inherit;font-size:12px}.card-actions button:hover{border-color:var(--accent)}
 .empty{grid-column:1/-1;text-align:center;padding:35px;color:var(--muted);background:var(--panel);border-radius:15px}
 footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:12px;text-align:center}
 .modal{position:fixed;inset:0;background:#000b;display:none;align-items:center;justify-content:center;padding:18px;z-index:10}.modal.show{display:flex}.modal-box{max-width:480px;width:100%;background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}.modal-top{display:flex;justify-content:space-between;align-items:center}.close{background:transparent;color:white;border:0;font-size:25px;cursor:pointer}.modal-box p{color:var(--muted)}
 @media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}nav{gap:11px}}
-@media(max-width:600px){.hero-box.featured{min-height:0;flex-direction:column-reverse;align-items:stretch}.hero-art{width:100%;min-height:145px}.hero-art span{font-size:58px}.hero-box:after{inset:0}.nav{height:60px}nav{font-size:12px;gap:10px}.brand{font-size:20px}.hero{padding-top:25px}.hero-box{padding:23px;min-height:250px}.hero-box:after{font-size:90px;left:3%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.poster{height:160px;font-size:48px}.card-body{padding:10px}.card h3{font-size:14px}.section-head h2{font-size:18px}}
-@media(max-width:360px){nav a:nth-child(3){display:none}.grid{gap:8px}.poster{height:140px}}
+@media(max-width:600px){.hero-box.featured{min-height:0;flex-direction:column-reverse;align-items:stretch}.hero-art{width:100%;min-height:145px}.hero-art span{font-size:58px}.hero-box:after{inset:0}.nav{height:60px}nav{font-size:12px;gap:10px}.brand{font-size:20px}.hero{padding-top:25px}.hero-box{padding:23px;min-height:250px}.hero-box:after{font-size:90px;left:3%}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.poster{height:190px;font-size:48px}.poster .fallback-icon{font-size:48px}.card-body{padding:10px}.card h3{font-size:14px}.section-head h2{font-size:18px}}
+@media(max-width:360px){nav a:nth-child(3){display:none}.grid{gap:8px}.poster{height:165px}}
 </style>
 </head>
 <body>
@@ -48,7 +48,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <div class="eyebrow">بەخێربێیت بۆ KurdFlix</div>
 <h1>چیرۆکەکان بە ژێرنووسی کوردی ببینە</h1>
 <p>فیلم و زنجیرەی هەڵبژێردراو، تەنها ئەوانەی ژێرنووسی کوردییان هەیە.</p>
-<div class="hero-tags"><span>🇹🇯 ژێرنووسی کوردی</span><span>🎬 فیلم و زنجیرە</span></div>
+<div class="hero-tags"><span>🎞️ ژێرنووسی کوردی</span><span>🎬 فیلم و زنجیرە</span></div>
 <a class="btn" href="#catalog">گەڕان لە ناوەڕۆکەکان</a>
 </div></div></section>
 <section id="catalog">
@@ -75,7 +75,8 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
   <label>جۆری ناوەڕۆک</label><select id="newType"><option>فیلم</option><option>زنجیرە</option></select>
   <label>جۆری فیلم</label><select id="newGenre"><option>ئەکشن</option><option>دراما</option><option>کۆمیدی</option><option>زانیاری</option><option>خەیاڵی</option></select>
   <label>ساڵی دەرچوون</label><input id="newYear" type="number" min="1900" max="2099" value="2026" required>
-  <label>ئایکۆن</label><input id="newIcon" maxlength="4" value="🎬">
+  <label>بەستەری وێنەی پۆستەر</label><input id="newPoster" type="url" placeholder="https://example.com/poster.jpg">
+  <label>ئایکۆن (بۆ کاتی بارنەبوونی وێنە)</label><input id="newIcon" maxlength="4" value="🎬">
   <label>کورتەی باس</label><textarea id="newDesc" rows="2" maxlength="220" placeholder="کورتەیەک لەبارەی ناوەڕۆک"></textarea>
   <label class="checkline"><input type="checkbox" id="hasSubtitle" required> دڵنیام ژێرنووسی کوردی هەیە و مۆڵەتی بەکارهێنانی ناوەڕۆکەکەم هەیە.</label>
   <button class="btn" type="submit">زیادکردنی ناوەڕۆک</button>
@@ -86,30 +87,44 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 </div></div>
 <script>
 const defaultItems=[
- {id:1,title:"گەشتی بۆ ئایندە",type:"فیلم",genre:"خەیاڵی",year:2025,icon:"🚀",desc:"فیلمێکی خەیاڵی لەبارەی گەشتێکی سەرسوڕهێنەر."},
- {id:2,title:"شارە نهێنییەکان",type:"زنجیرە",genre:"دراما",year:2024,icon:"🌃",desc:"زنجیرەیەک لە چیرۆکی خێزان و نهێنییەکان."},
- {id:3,title:"ئەرکی مەترسیدار",type:"فیلم",genre:"ئەکشن",year:2023,icon:"🕶️",desc:"چیرۆکی پاڵەوانێک لە ئەرکێکی ئاڵۆزدا."},
- {id:4,title:"پێکەنین لە شار",type:"زنجیرە",genre:"کۆمیدی",year:2025,icon:"😂",desc:"زنجیرەیەکی کۆمیدی بۆ کاتێکی خۆش."},
- {id:5,title:"نهێنیی زەوی",type:"فیلم",genre:"زانیاری",year:2022,icon:"🌍",desc:"گەشتێک بۆ ناسینی سروشت و جیهان."},
- {id:6,title:"دوایین هیوای",type:"زنجیرە",genre:"دراما",year:2023,icon:"✨",desc:"چیرۆکی خۆشەویستی و بڕیارە قورسەکان."},
- {id:7,title:"شەوی تاریک",type:"فیلم",genre:"ئەکشن",year:2024,icon:"🌙",desc:"ڕووداوەکان لە شەوێکی پڕ لە نهێنیدا."},
- {id:8,title:"دەرگای جادوو",type:"زنجیرە",genre:"خەیاڵی",year:2022,icon:"🪄",desc:"جیهانێکی جادوو و سەرهاتی سەیر."}
+ {id:1,title:"گەشتی بۆ ئایندە",type:"فیلم",genre:"خەیاڵی",year:2025,icon:"🚀",poster:"https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=600&q=80",desc:"فیلمێکی خەیاڵی لەبارەی گەشتێکی سەرسوڕهێنەر."},
+ {id:2,title:"شارە نهێنییەکان",type:"زنجیرە",genre:"دراما",year:2024,icon:"🌃",poster:"https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=600&q=80",desc:"زنجیرەیەک لە چیرۆکی خێزان و نهێنییەکان."},
+ {id:3,title:"ئەرکی مەترسیدار",type:"فیلم",genre:"ئەکشن",year:2023,icon:"🕶️",poster:"https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80",desc:"چیرۆکی پاڵەوانێک لە ئەرکێکی ئاڵۆزدا."},
+ {id:4,title:"پێکەنین لە شار",type:"زنجیرە",genre:"کۆمیدی",year:2025,icon:"😂",poster:"https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=600&q=80",desc:"زنجیرەیەکی کۆمیدی بۆ کاتێکی خۆش."},
+ {id:5,title:"نهێنیی زەوی",type:"فیلم",genre:"زانیاری",year:2022,icon:"🌍",poster:"https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=600&q=80",desc:"گەشتێک بۆ ناسینی سروشت و جیهان."},
+ {id:6,title:"دوایین هیوای",type:"زنجیرە",genre:"دراما",year:2023,icon:"✨",poster:"https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=600&q=80",desc:"چیرۆکی خۆشەویستی و بڕیارە قورسەکان."},
+ {id:7,title:"شەوی تاریک",type:"فیلم",genre:"ئەکشن",year:2024,icon:"🌙",poster:"https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80",desc:"ڕووداوەکان لە شەوێکی پڕ لە نهێنیدا."},
+ {id:8,title:"دەرگای جادوو",type:"زنجیرە",genre:"خەیاڵی",year:2022,icon:"🪄",poster:"https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80",desc:"جیهانێکی جادوو و سەرهاتی سەیر."}
 ];
 let customItems=JSON.parse(localStorage.getItem("kurdflixCustomItems")||"[]");
 let items=[...defaultItems,...customItems];
 let active="all";let favorites=JSON.parse(localStorage.getItem("cinemaFavs")||"[]");
 const grid=document.getElementById("grid"),search=document.getElementById("search"),genre=document.getElementById("genre"),year=document.getElementById("year");
+function escapeAttr(str){return String(str||"").replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function renderPoster(x){
+ const safeIcon=x.icon||"🎬";
+ if(x.poster&&x.poster.trim()){
+  return `<img class="poster-img" src="${escapeAttr(x.poster.trim())}" alt="${escapeAttr(x.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span class="fallback-icon" style="display:none">${safeIcon}</span>`;
+ }
+ return `<span class="fallback-icon">${safeIcon}</span>`;
+}
 function render(){
  const q=search.value.trim().toLowerCase();
  const list=items.filter(x=>(active==="all"||x.type===active||(active==="fav"&&favorites.includes(x.id)))&&
  (!q||x.title.toLowerCase().includes(q))&&(genre.value==="all"||x.genre===genre.value)&&(year.value==="all"||String(x.year)===year.value));
  document.getElementById("count").textContent=list.length+" دانە";
- grid.innerHTML=list.length?list.map(x=>`<article class="card"><div class="poster"><small>${x.type}</small>${x.icon}<span class="sub">✓ ژێرنووسی کوردی</span></div><div class="card-body"><h3>${x.title}</h3><div class="meta">${x.genre} • ${x.year}</div><div class="card-actions"><button onclick="details(${x.id})">زانیاری</button><button onclick="toggleFav(${x.id})">${favorites.includes(x.id)?"♥ دڵخواز":"♡ دڵخواز"}</button></div></div></article>`).join(""):'<div class="empty">هیچ ئەنجامێک نەدۆزرایەوە.</div>';
+ grid.innerHTML=list.length?list.map(x=>`<article class="card"><div class="poster"><small>${x.type}</small>${renderPoster(x)}<span class="sub">✓ ژێرنووسی کوردی</span></div><div class="card-body"><h3>${x.title}</h3><div class="meta">${x.genre} • ${x.year}</div><div class="card-actions"><button onclick="details(${x.id})">زانیاری</button><button onclick="toggleFav(${x.id})">${favorites.includes(x.id)?"♥ دڵخواز":"♡ دڵخواز"}</button></div></div></article>`).join(""):'<div class="empty">هیچ ئەنجامێک نەدۆزرایەوە.</div>';
 }
 function toggleFav(id){favorites=favorites.includes(id)?favorites.filter(v=>v!==id):[...favorites,id];localStorage.setItem("cinemaFavs",JSON.stringify(favorites));render()}
 function details(id){const x=items.find(v=>v.id===id);document.getElementById("modalTitle").textContent=x.title;document.getElementById("modalText").textContent=x.desc;document.getElementById("modal").classList.add("show")}
 function closeModal(){document.getElementById("modal").classList.remove("show")}
-function saveCustom(){localStorage.setItem("kurdflixCustomItems",JSON.stringify(customItems));items=[...defaultItems,...customItems];render();renderAdmin()}
+function updateYearOptions(){
+ const selected=year.value||"all";
+ const years=[...new Set(items.map(x=>String(x.year)).filter(y=>/^\d{4}$/.test(y)))].sort((a,b)=>Number(b)-Number(a));
+ year.innerHTML='<option value="all">هەموو ساڵەکان</option>'+years.map(y=>`<option value="${y}">${y}</option>`).join('');
+ year.value=years.includes(selected)?selected:"all";
+}
+function saveCustom(){localStorage.setItem("kurdflixCustomItems",JSON.stringify(customItems));items=[...defaultItems,...customItems];updateYearOptions();render();renderAdmin()}
 function renderAdmin(){
  const box=document.getElementById("adminList");
  box.innerHTML=customItems.length?customItems.map(x=>`<div class="admin-row"><span>${x.title} <small class="muted">(${x.type})</small></span><button class="delete-btn" onclick="removeCustom(${x.id})">سڕینەوە</button></div>`).join(""):'<p class="muted">هێشتا هیچ ناوەڕۆکێکی نوێ زیاد نەکراوە.</p>';
@@ -120,12 +135,13 @@ document.getElementById("adminClose").onclick=()=>document.getElementById("admin
 document.getElementById("adminModal").addEventListener("click",e=>{if(e.target.id==="adminModal")document.getElementById("adminModal").classList.remove("show")});
 document.getElementById("addForm").addEventListener("submit",e=>{
  e.preventDefault();
- const item={id:Date.now(),title:document.getElementById("newTitle").value.trim(),type:document.getElementById("newType").value,genre:document.getElementById("newGenre").value,year:Number(document.getElementById("newYear").value),icon:document.getElementById("newIcon").value.trim()||"🎬",desc:document.getElementById("newDesc").value.trim()||"زانیاری زیاتر بەزوویی زیاد دەکرێت."};
+ const item={id:Date.now(),title:document.getElementById("newTitle").value.trim(),type:document.getElementById("newType").value,genre:document.getElementById("newGenre").value,year:Number(document.getElementById("newYear").value),poster:document.getElementById("newPoster").value.trim(),icon:document.getElementById("newIcon").value.trim()||"🎬",desc:document.getElementById("newDesc").value.trim()||"زانیاری زیاتر بەزوویی زیاد دەکرێت."};
  if(!item.title)return;
  customItems.push(item);saveCustom();e.target.reset();document.getElementById("newYear").value=2026;document.getElementById("newIcon").value="🎬";
 });
 document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{active=b.dataset.type;document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t===b));render()}));
 [search,genre,year].forEach(el=>el.addEventListener("input",render));document.getElementById("close").onclick=closeModal;document.getElementById("ok").onclick=closeModal;document.getElementById("modal").addEventListener("click",e=>{if(e.target.id==="modal")closeModal()});
+updateYearOptions();
 render();
 </script>
 </body>
