@@ -18,7 +18,7 @@ nav{display:flex;gap:20px;color:var(--muted);font-size:14px}nav a:hover{color:wh
 .hero-art{width:34%;min-height:245px;border-radius:19px;background:linear-gradient(145deg,#6d3c91,#241538 70%);border:1px solid #ffffff30;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;box-shadow:0 18px 45px #0005;position:relative;z-index:1}
 .hero-art span{font-size:90px;filter:drop-shadow(0 12px 12px #0007)}.hero-art b{font-size:17px;color:#f1e8ff}
 .hero-tags{display:flex;gap:9px;flex-wrap:wrap;margin:14px 0}.hero-tags span{background:#ffffff18;border:1px solid #ffffff30;padding:5px 10px;border-radius:20px;font-size:12px}
-.hero-content{max-width:620px;position:relative;z-index:1}.eyebrow{color:#d9caff;font-size:13px}.hero h1{font-size:clamp(29px,5vw,48px);line-height:1.25;margin:9px 0}.hero p{color:#e0d8ed;max-width:550px}.btn{border:0;border-radius:12px;padding:11px 18px;background:var(--accent);color:#1b1230;font-weight:800;cursor:pointer;font-size:14px}.btn.secondary{background:#ffffff18;color:white;border:1px solid #ffffff30}
+.hero-content{max-width:620px;position:relative;z-index:1}.eyebrow{color:#d9caff;font-size:13px}.hero h1{font-size:clamp(29px,5vw,48px);line-height:1.25;margin:9px 0}.hero p{color:#e0d8ed;max-width:550px}.btn{border:0;border-radius:12px;padding:11px 18px;background:var(--accent);color:#ffffff;font-weight:800;cursor:pointer;font-size:14px}.btn.secondary{background:#ffffff18;color:white;border:1px solid #ffffff30}
 .controls{display:flex;gap:10px;flex-wrap:wrap;margin:8px 0 22px}.search{flex:1;min-width:210px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 15px;color:white;font:inherit;outline:none}.search:focus{border-color:var(--accent)}
 select,input,textarea{background:var(--panel);border:1px solid var(--line);border-radius:12px;color:white;padding:10px 13px;font:inherit}
 .admin-link{background:#ffffff14;border:1px solid #ffffff35;color:white;border-radius:10px;padding:7px 10px;font:inherit;font-size:12px;cursor:pointer}
@@ -46,9 +46,9 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 <div class="hero-art"><span>🎞️</span><b>سینەمای کوردی</b></div>
 <div class="hero-content">
 <div class="eyebrow">بەخێربێیت بۆ KurdFlix</div>
-<h1>چیرۆکەکان بە ژێرنووسی سۆرانی ببینە</h1>
-<p>فیلم و زنجیرەی هەڵبژێردراو، تەنها ئەوانەی ژێرنووسی کوردیی سۆرانییان هەیە.</p>
-<div class="hero-tags"><span>🇹🇯 ژێرنووسی سۆرانی</span><span>🎬 فیلم و زنجیرە</span></div>
+<h1>چیرۆکەکان بە ژێرنووسی کوردی ببینە</h1>
+<p>فیلم و زنجیرەی هەڵبژێردراو، تەنها ئەوانەی ژێرنووسی کوردییان هەیە.</p>
+<div class="hero-tags"><span>🇹🇯 ژێرنووسی کوردی</span><span>🎬 فیلم و زنجیرە</span></div>
 <a class="btn" href="#catalog">گەڕان لە ناوەڕۆکەکان</a>
 </div></div></section>
 <section id="catalog">
@@ -63,13 +63,13 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
 </div>
 <div class="grid" id="grid"></div>
 </section>
-<section id="about" style="padding:5px 0 38px"><div class="section-head"><h2>دەربارەی سایتەکە</h2></div><p class="muted">ئەمە وەشانی دیمۆی KurdFlix ـە. ناونیشانەکان نموونەیین؛ دواتر تەنها فیلم و زنجیرەی مۆڵەتپێدراو کە ژێرنووسی کوردیی سۆرانییان هەیە زیاد دەکەین.</p></section>
+<section id="about" style="padding:5px 0 38px"><div class="section-head"><h2>دەربارەی سایتەکە</h2></div><p class="muted">ئەمە وەشانی دیمۆی KurdFlix ـە. ناونیشانەکان نموونەیین؛ دواتر تەنها فیلم و زنجیرەی مۆڵەتپێدراو کە ژێرنووسی کوردییان هەیە زیاد دەکەین.</p></section>
 </main>
 <footer><div class="wrap">© 2026 KurdFlix — دروستکراو بۆ خۆشەویستانی فیلم و زنجیرە</div></footer>
 <div class="modal" id="modal"><div class="modal-box"><div class="modal-top"><h2 id="modalTitle"></h2><button class="close" id="close">×</button></div><p id="modalText"></p><p class="muted">ئەم ناوەڕۆکە نموونەییە. بۆ پەخشکردن یان بەستەری بینین، سەرچاوەی یاسایی و مۆڵەتپێدراو دیاری دەکەین.</p><button class="btn secondary" id="ok">باشە</button></div></div>
 <div class="modal" id="adminModal"><div class="modal-box">
  <div class="modal-top"><h2>بەڕێوەبردنی KurdFlix</h2><button class="close" id="adminClose">×</button></div>
- <p class="muted">فیلم یان زنجیرەی نوێ زیاد بکە. تەنها ناوەڕۆکی مۆڵەتپێدراو و ژێرنووسی سۆرانی تۆمار بکە.</p>
+ <p class="muted">فیلم یان زنجیرەی نوێ زیاد بکە. تەنها ناوەڕۆکی مۆڵەتپێدراو و ژێرنووسی کوردی تۆمار بکە.</p>
  <form id="addForm" class="admin-form">
   <label>ناوی فیلم یان زنجیرە</label><input id="newTitle" required maxlength="70" placeholder="ناوی ناوەڕۆک">
   <label>جۆری ناوەڕۆک</label><select id="newType"><option>فیلم</option><option>زنجیرە</option></select>
@@ -77,7 +77,7 @@ footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-s
   <label>ساڵی دەرچوون</label><input id="newYear" type="number" min="1900" max="2099" value="2026" required>
   <label>ئایکۆن</label><input id="newIcon" maxlength="4" value="🎬">
   <label>کورتەی باس</label><textarea id="newDesc" rows="2" maxlength="220" placeholder="کورتەیەک لەبارەی ناوەڕۆک"></textarea>
-  <label class="checkline"><input type="checkbox" id="hasSubtitle" required> دڵنیام ژێرنووسی کوردی سۆرانی هەیە و مۆڵەتی بەکارهێنانی ناوەڕۆکەکەم هەیە.</label>
+  <label class="checkline"><input type="checkbox" id="hasSubtitle" required> دڵنیام ژێرنووسی کوردی هەیە و مۆڵەتی بەکارهێنانی ناوەڕۆکەکەم هەیە.</label>
   <button class="btn" type="submit">زیادکردنی ناوەڕۆک</button>
  </form>
  <div class="admin-list-head"><b>ناوەڕۆکی زیادکراو</b><span class="muted">دەتوانیت بیانسڕیتەوە</span></div>
@@ -104,7 +104,7 @@ function render(){
  const list=items.filter(x=>(active==="all"||x.type===active||(active==="fav"&&favorites.includes(x.id)))&&
  (!q||x.title.toLowerCase().includes(q))&&(genre.value==="all"||x.genre===genre.value)&&(year.value==="all"||String(x.year)===year.value));
  document.getElementById("count").textContent=list.length+" دانە";
- grid.innerHTML=list.length?list.map(x=>`<article class="card"><div class="poster"><small>${x.type}</small>${x.icon}<span class="sub">✓ ژێرنووسی سۆرانی</span></div><div class="card-body"><h3>${x.title}</h3><div class="meta">${x.genre} • ${x.year}</div><div class="card-actions"><button onclick="details(${x.id})">زانیاری</button><button onclick="toggleFav(${x.id})">${favorites.includes(x.id)?"♥ دڵخواز":"♡ دڵخواز"}</button></div></div></article>`).join(""):'<div class="empty">هیچ ئەنجامێک نەدۆزرایەوە.</div>';
+ grid.innerHTML=list.length?list.map(x=>`<article class="card"><div class="poster"><small>${x.type}</small>${x.icon}<span class="sub">✓ ژێرنووسی کوردی</span></div><div class="card-body"><h3>${x.title}</h3><div class="meta">${x.genre} • ${x.year}</div><div class="card-actions"><button onclick="details(${x.id})">زانیاری</button><button onclick="toggleFav(${x.id})">${favorites.includes(x.id)?"♥ دڵخواز":"♡ دڵخواز"}</button></div></div></article>`).join(""):'<div class="empty">هیچ ئەنجامێک نەدۆزرایەوە.</div>';
 }
 function toggleFav(id){favorites=favorites.includes(id)?favorites.filter(v=>v!==id):[...favorites,id];localStorage.setItem("cinemaFavs",JSON.stringify(favorites));render()}
 function details(id){const x=items.find(v=>v.id===id);document.getElementById("modalTitle").textContent=x.title;document.getElementById("modalText").textContent=x.desc;document.getElementById("modal").classList.add("show")}
